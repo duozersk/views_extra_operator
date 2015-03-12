@@ -12,23 +12,23 @@ function views_extra_operator_views_api() {
  * This is the function used to replace values in the $data array. See below.
  */
 function views_extra_operator_update_handlers(&$value, &$key) {
-  if ($key == "handler" && $value == "views_handler_argument_string") {
-    $value = "views_extra_operator_views_handler_argument_string";
+  if ($key == 'handler' && $value == 'views_handler_argument_string') {
+    $value = 'views_extra_operator_views_handler_argument_string';
   }
-  if ($key == "handler" && $value == "content_handler_argument_string") {
-    $value = "views_extra_operator_content_handler_argument_string";
+  if ($key == 'handler' && $value == 'content_handler_argument_string') {
+    $value = 'views_extra_operator_content_handler_argument_string';
   }
-  if ($key == "handler" && $value == "views_handler_argument_node_nid") {
-    $value = "views_extra_operator_views_handler_argument_node_nid";
+  if ($key == 'handler' && $value == 'views_handler_argument_node_nid') {
+    $value = 'views_extra_operator_views_handler_argument_node_nid';
   }
-  if ($key == "handler" && $value == "content_handler_argument_numeric") {
-    $value = "views_extra_operator_content_handler_argument_numeric";
+  if ($key == 'handler' && $value == 'content_handler_argument_numeric') {
+    $value = 'views_extra_operator_content_handler_argument_numeric';
   }
-  if ($key == "handler" && $value == "views_handler_argument_numeric") {
-    $value = "views_extra_operator_views_handler_argument_numeric";
+  if ($key == 'handler' && $value == 'views_handler_argument_numeric') {
+    $value = 'views_extra_operator_views_handler_argument_numeric';
   }
-  if ($key == "handler" && $value == "views_handler_sort") {
-    $value = "views_extra_operator_views_sort";
+  if ($key == 'handler' && $value == 'views_handler_sort') {
+    $value = 'views_extra_operator_views_sort';
   }
 }
 
@@ -37,5 +37,5 @@ function views_extra_operator_update_handlers(&$value, &$key) {
  * It will browse the $data array and replace the default handlers by the one we've created.
  */
 function views_extra_operator_views_data_alter(&$data) {
-  array_walk_recursive($data, "views_extra_operator_update_handlers");
+  array_walk_recursive($data, 'views_extra_operator_update_handlers');
 }
