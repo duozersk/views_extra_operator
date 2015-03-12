@@ -22,7 +22,7 @@ class views_extra_operator_views_handler_argument_string extends views_handler_a
     views_extra_operator_options_form_string($this, $form, $form_state);
   }
 
-  function query() {
+  function query($group_by = FALSE) {
     views_extra_operator_query_string($this);
   }
 

@@ -25,7 +25,7 @@ class views_extra_operator_content_handler_argument_numeric extends views_handle
 
   }
 
-  function query() {
+  function query($group_by = FALSE) {
     views_extra_operator_query_string($this);
   }
 
