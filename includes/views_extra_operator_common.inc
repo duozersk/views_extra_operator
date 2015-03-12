@@ -124,7 +124,7 @@ function views_extra_operator_rewrite_field($field, $fct, $fct_parameters) {
       $field = "SUBSTRING($field, $pos, $len)";
       break;
     case 'substring_index':
-      list($delimt, $count) = explode(',', $fct_parameters);
+      list($delim, $count) = explode(',', $fct_parameters);
       $field = "SUBSTRING_INDEX($field, $delim, $count)";
       break;
     case 'unhex':
