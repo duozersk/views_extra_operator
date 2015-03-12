@@ -150,7 +150,7 @@ function views_extra_operator_query_string(&$_this) {
   $fct_parameters = $_this->options['veo_functions']['veo_fct_parameters'];
 
   if (!empty($_this->options['break_phrase']) && (in_array($_this->options['veo_operator']['veo_operator'], $operator_multi))) {
-    views_break_phrase($argument, &$this);
+    views_break_phrase($argument, $this);
     if (count($_this->value) > 1) {
       $multi = true;
     }
